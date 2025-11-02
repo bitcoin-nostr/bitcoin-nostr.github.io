@@ -18,7 +18,7 @@ export function Catalog() {
 
   return (
     <OverlayScrollbar className="h-screen">
-      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 pb-20 md:pb-0">
+      <div className="min-h-screen bg-gradient-to-b from-background to-muted/20 pb-20 md:pb-0 mixed-page">
       {/* Header */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-3 md:py-4">
@@ -68,7 +68,7 @@ export function Catalog() {
         </div>
 
         {/* Bitcoin Section */}
-        <div className="mb-16">
+        <div className="mb-16 bitcoin-section">
           <div className="mb-8 text-center relative">
             <div className="absolute inset-0 bg-gradient-to-r from-orange-100/50 to-amber-100/50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-3xl -m-4"></div>
             <div className="relative p-6">
@@ -91,7 +91,7 @@ export function Catalog() {
         </div>
 
         {/* Nostr Section */}
-        <div className="mb-16">
+        <div className="mb-16 nostr-section">
           <div className="mb-8 text-center relative">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-100/50 to-indigo-100/50 dark:from-purple-900/20 dark:to-indigo-900/20 rounded-3xl -m-4"></div>
             <div className="relative p-6">

@@ -13,19 +13,7 @@ interface LevelCardProps {
   className?: string;
 }
 
-const levelColors: Record<string, string> = {
-  // Bitcoin Levels - Orange/Gold gradients
-  B1: 'from-orange-400 to-amber-500', // Bitcoin Basics
-  B2: 'from-orange-500 to-amber-600', // Bitcoin Technology
-  B3: 'from-orange-600 to-amber-700', // Bitcoin Privacy & Operations
-  B4: 'from-orange-700 to-amber-800', // Lightning Mastery
-  
-  // Nostr Levels - Purple/Indigo gradients
-  N1: 'from-purple-400 to-indigo-500', // Nostr Basics
-  N2: 'from-purple-500 to-indigo-600', // Nostr Network
-  N3: 'from-purple-600 to-indigo-700', // Nostr Apps & Economy
-  N4: 'from-purple-700 to-indigo-800', // Advanced Nostr Development
-};
+
 
 const levelIcons: Record<string, string> = {
   // Bitcoin Levels - Bitcoin icon
@@ -43,7 +31,15 @@ const levelIcons: Record<string, string> = {
 
 export function LevelCard({ level, className }: LevelCardProps) {
   const { t } = useTranslation();
-  const gradientClass = levelColors[level.code] || 'from-gray-500 to-gray-600';
+  
+  // Define gradient styles directly
+  // Get CSS class for level-specific styling
+  const getLevelClass = (code: string) => {
+    if (code.startsWith('B')) return `level-${code}`;
+    if (code.startsWith('N')) return `level-${code}`;
+    return 'level-default';
+  };
+  
   const iconSrc = levelIcons[level.code];
 
   return (
@@ -53,7 +49,7 @@ export function LevelCard({ level, className }: LevelCardProps) {
         className
       )}
     >
-      <div className={cn('h-32 bg-gradient-to-br', gradientClass, 'relative')}>
+      <div className={cn('h-32 relative', getLevelClass(level.code))}>
         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white">

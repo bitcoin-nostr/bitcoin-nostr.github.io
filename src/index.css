@@ -205,20 +205,20 @@
 
 /* Bitcoin Lesson Styling - Orange theme for numbered elements */
 .bitcoin-lesson ol {
-  list-style-type: decimal;
-  list-style-position: outside;
-  padding-left: 1.5rem;
+  list-style-type: decimal !important;
+  list-style-position: outside !important;
+  padding-left: 1.5rem !important;
 }
 
 .bitcoin-lesson ol > li::marker {
-  color: rgb(234 88 12); /* orange-600 */
-  font-weight: bold;
+  color: rgb(234 88 12) !important; /* orange-600 */
+  font-weight: bold !important;
 }
 
 .bitcoin-lesson .step-number,
 .bitcoin-lesson [class*="step-"] {
-  color: rgb(234 88 12); /* orange-600 */
-  font-weight: bold;
+  color: rgb(234 88 12) !important; /* orange-600 */
+  font-weight: bold !important;
 }
 
 .bitcoin-lesson h1 .number, 
@@ -227,25 +227,25 @@
 .bitcoin-lesson h4 .number, 
 .bitcoin-lesson h5 .number, 
 .bitcoin-lesson h6 .number {
-  color: rgb(234 88 12); /* orange-600 */
+  color: rgb(234 88 12) !important; /* orange-600 */
 }
 
 /* Nostr Lesson Styling - Purple theme for numbered elements */
 .nostr-lesson ol {
-  list-style-type: decimal;
-  list-style-position: outside;
-  padding-left: 1.5rem;
+  list-style-type: decimal !important;
+  list-style-position: outside !important;
+  padding-left: 1.5rem !important;
 }
 
 .nostr-lesson ol > li::marker {
-  color: rgb(147 51 234); /* purple-600 */
-  font-weight: bold;
+  color: rgb(147 51 234) !important; /* purple-600 */
+  font-weight: bold !important;
 }
 
 .nostr-lesson .step-number,
 .nostr-lesson [class*="step-"] {
-  color: rgb(147 51 234); /* purple-600 */
-  font-weight: bold;
+  color: rgb(147 51 234) !important; /* purple-600 */
+  font-weight: bold !important;
 }
 
 .nostr-lesson h1 .number,
@@ -254,5 +254,99 @@
 .nostr-lesson h4 .number,
 .nostr-lesson h5 .number,
 .nostr-lesson h6 .number {
-  color: rgb(147 51 234); /* purple-600 */
+  color: rgb(147 51 234) !important; /* purple-600 */
+}
+
+/* Level Card Specific Gradients */
+.level-B1 {
+  background: linear-gradient(to bottom right, rgb(251, 146, 60), rgb(245, 158, 11)) !important; /* orange-400 to amber-500 */
+}
+
+.level-B2 {
+  background: linear-gradient(to bottom right, rgb(249, 115, 22), rgb(217, 119, 6)) !important; /* orange-500 to amber-600 */
+}
+
+.level-B3 {
+  background: linear-gradient(to bottom right, rgb(234, 88, 12), rgb(180, 83, 9)) !important; /* orange-600 to amber-700 */
+}
+
+.level-B4 {
+  background: linear-gradient(to bottom right, rgb(194, 65, 12), rgb(146, 64, 14)) !important; /* orange-700 to amber-800 */
+}
+
+.level-N1 {
+  background: linear-gradient(to bottom right, rgb(196, 181, 253), rgb(129, 140, 248)) !important; /* purple-400 to indigo-500 */
+}
+
+.level-N2 {
+  background: linear-gradient(to bottom right, rgb(147, 51, 234), rgb(99, 102, 241)) !important; /* purple-500 to indigo-600 */
+}
+
+.level-N3 {
+  background: linear-gradient(to bottom right, rgb(126, 34, 206), rgb(79, 70, 229)) !important; /* purple-600 to indigo-700 */
+}
+
+.level-N4 {
+  background: linear-gradient(to bottom right, rgb(107, 33, 168), rgb(67, 56, 202)) !important; /* purple-700 to indigo-800 */
+}
+
+.level-default {
+  background: linear-gradient(to bottom right, rgb(107, 114, 128), rgb(75, 85, 99)) !important; /* gray fallback */
+}
+
+/* Bitcoin Page Theme - Override primary color to orange */
+.bitcoin-page {
+  --primary: 24 95% 53%; /* orange-600 in HSL */
+  --primary-foreground: 0 0% 100%;
+  
+  --ring: 24 95% 53%; /* orange-600 */
+}
+
+.bitcoin-page .dark {
+  --primary: 24 95% 60%; /* slightly lighter orange for dark mode */
+  --ring: 24 95% 60%;
+}
+
+/* Nostr Page Theme - Keep purple but ensure it's consistent */
+.nostr-page {
+  --primary: 274 60% 50%; /* original purple */
+  --primary-foreground: 0 0% 100%;
+  
+  --ring: 274 60% 50%;
+}
+
+.nostr-page .dark {
+  --primary: 274 60% 60%; /* slightly lighter purple for dark mode */
+  --ring: 274 60% 60%;
+}
+
+/* Mixed Page (Catalog) - Keep original theme colors */
+.mixed-page {
+  --primary: 274 60% 50%; /* original purple */
+  --primary-foreground: 0 0% 100%;
+  --ring: 274 60% 50%;
+}
+
+/* Bitcoin Section in Catalog - Override primary to orange for this section */
+.bitcoin-section {
+  --primary: 24 95% 53%; /* orange-600 in HSL */
+  --primary-foreground: 0 0% 100%;
+  --ring: 24 95% 53%;
+}
+
+.bitcoin-section * {
+  --primary: 24 95% 53% !important; /* ensure all child elements use orange */
+  --ring: 24 95% 53% !important;
+}
+
+/* Nostr Section in Catalog - Keep purple theme */
+.nostr-section {
+  --primary: 274 60% 50%; /* purple */
+  --primary-foreground: 0 0% 100%;
+  --ring: 274 60% 50%;
+}
+
+.nostr-section * {
+  --primary: 274 60% 50% !important; /* ensure all child elements use purple */
+  --ring: 274 60% 50% !important;
 }
