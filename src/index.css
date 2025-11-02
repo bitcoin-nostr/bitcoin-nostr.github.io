@@ -164,6 +164,10 @@
   animation: fade-in-up 0.6s ease-out;
 }
 
+.animation-delay-500 {
+  animation-delay: 0.5s;
+}
+
 /* OverlayScrollbars Custom Theme */
 .os-theme-dark > .os-scrollbar-handle {
   background: hsl(var(--primary) / 0.6);
@@ -197,4 +201,58 @@
 
 .dark .os-theme-dark > .os-scrollbar-track {
   background: hsl(var(--muted) / 0.2);
+}
+
+/* Bitcoin Lesson Styling - Orange theme for numbered elements */
+.bitcoin-lesson ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+.bitcoin-lesson ol > li::marker {
+  color: rgb(234 88 12); /* orange-600 */
+  font-weight: bold;
+}
+
+.bitcoin-lesson .step-number,
+.bitcoin-lesson [class*="step-"] {
+  color: rgb(234 88 12); /* orange-600 */
+  font-weight: bold;
+}
+
+.bitcoin-lesson h1 .number, 
+.bitcoin-lesson h2 .number, 
+.bitcoin-lesson h3 .number, 
+.bitcoin-lesson h4 .number, 
+.bitcoin-lesson h5 .number, 
+.bitcoin-lesson h6 .number {
+  color: rgb(234 88 12); /* orange-600 */
+}
+
+/* Nostr Lesson Styling - Purple theme for numbered elements */
+.nostr-lesson ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+}
+
+.nostr-lesson ol > li::marker {
+  color: rgb(147 51 234); /* purple-600 */
+  font-weight: bold;
+}
+
+.nostr-lesson .step-number,
+.nostr-lesson [class*="step-"] {
+  color: rgb(147 51 234); /* purple-600 */
+  font-weight: bold;
+}
+
+.nostr-lesson h1 .number,
+.nostr-lesson h2 .number,
+.nostr-lesson h3 .number,
+.nostr-lesson h4 .number,
+.nostr-lesson h5 .number,
+.nostr-lesson h6 .number {
+  color: rgb(147 51 234); /* purple-600 */
 }

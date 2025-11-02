@@ -19,28 +19,48 @@
     "cta_unlock": "Unlock with Bitcoin ⚡"
   },
   "levels": {
-    "A1": "Bitcoin Basics",
-    "A2": "Bitcoin Fundamentals",
-    "B1": "Nostr Basics",
-    "B2": "Nostr Applications",
-    "C1": "Advanced Bitcoin",
-    "C2": "Bitcoin & Nostr Master",
-    "A1_title": "Bitcoin Basics",
-    "A1_desc": "Start your Bitcoin journey with the fundamentals",
-    "A2_title": "Bitcoin Fundamentals", 
-    "A2_desc": "Deepen your understanding of Bitcoin technology",
-    "B1_title": "Nostr Basics",
-    "B1_desc": "Discover the decentralized social protocol",
-    "B2_title": "Nostr Applications",
-    "B2_desc": "Build and use Nostr applications",
-    "C1_title": "Advanced Bitcoin",
-    "C1_desc": "Master advanced Bitcoin concepts and Lightning",
-    "C2_title": "Bitcoin & Nostr Master",
-    "C2_desc": "Achieve mastery of the Bitcoin and Nostr ecosystem"
+    "B1": "Bitcoin Basics",
+    "B2": "Bitcoin Technology", 
+    "B3": "Bitcoin Privacy & Security",
+    "B4": "Bitcoin Mastery",
+    "N1": "Nostr Basics",
+    "N2": "Nostr Network",
+    "N3": "Nostr Applications",
+    "N4": "Nostr Mastery",
+    "B1_title": "Bitcoin Basics",
+    "B1_desc": "Start your Bitcoin journey with fundamental concepts",
+    "B2_title": "Bitcoin Technology",
+    "B2_desc": "Learn mining, wallets, and Bitcoin's technical foundation",
+    "B3_title": "Bitcoin Privacy & Security", 
+    "B3_desc": "Master privacy techniques and run your own Bitcoin node",
+    "B4_title": "Bitcoin Mastery",
+    "B4_desc": "Advanced Lightning Network and Bitcoin expertise",
+    "N1_title": "Nostr Basics",
+    "N1_desc": "Discover decentralized social networking fundamentals",
+    "N2_title": "Nostr Network",
+    "N2_desc": "Understand relays, events, and network architecture",
+    "N3_title": "Nostr Applications",
+    "N3_desc": "Build applications and explore Nostr marketplaces",
+    "N4_title": "Nostr Mastery",
+    "N4_desc": "Advanced NIPs and future of decentralized protocols"
   },
   "modules": {
-    "A1-M01_title": "Bitcoin Foundations",
-    "A1-M01_desc": "Master the fundamental concepts of Bitcoin and digital money"
+    "B1-M01_title": "Bitcoin Fundamentals",
+    "B1-M01_desc": "Master the foundational concepts of Bitcoin and sound money",
+    "B2-M01_title": "Bitcoin Technology Deep Dive", 
+    "B2-M01_desc": "Learn mining, wallets, and Bitcoin's technical infrastructure",
+    "B3-M01_title": "Bitcoin Privacy & Node Operations",
+    "B3-M01_desc": "Advanced privacy techniques and running your own node",
+    "B4-M01_title": "Lightning Network Mastery",
+    "B4-M01_desc": "Master Bitcoin's second layer for instant payments",
+    "N1-M01_title": "Nostr Protocol Basics",
+    "N1-M01_desc": "Learn the fundamentals of decentralized social networking",
+    "N2-M01_title": "Nostr Network Architecture",
+    "N2-M01_desc": "Understand relays, events, and network protocols",
+    "N3-M01_title": "Nostr Applications & Economy",
+    "N3-M01_desc": "Build apps and explore decentralized marketplaces",
+    "N4-M01_title": "Advanced Nostr Development",
+    "N4-M01_desc": "Master advanced NIPs and future protocol development"
   },
   "lesson": {
     "free": "Free",
@@ -178,12 +198,20 @@
     "monthly_stats": "Monthly Stats"
   },
   "catalog": {
-    "title": "Choose Your Level",
-    "subtitle": "Start from A1 (beginner) or jump to your current level",
+    "title": "Choose Your Learning Path",
+    "subtitle": "Master Bitcoin and Nostr through structured learning paths",
+    "bitcoin_section": {
+      "title": " Bitcoin Learning Path",
+      "description": "Learn sound money, decentralization, and Bitcoin technology"
+    },
+    "nostr_section": {
+      "title": " Nostr Learning Path", 
+      "description": "Master decentralized social protocols and applications"
+    },
     "not_sure": {
       "title": "Not Sure Where to Start?",
-      "description": "Begin with A1 and work your way up. All A1 lessons have free previews!",
-      "button": "Start with A1"
+      "description": "Begin with Bitcoin Basics and work your way up. All beginner lessons have free previews!",
+      "button": "Start with Bitcoin Basics"
     }
   },
   "payment_toast": {
@@ -207,15 +235,15 @@
         "description": "Pay only for what you learn. No subscriptions. No hidden fees. Just sats."
       },
       "cefr_standard": {
-        "title": "CEFR Standard",
-        "description": "Follow the globally recognized framework from A1 (beginner) to C2 (proficiency)."
+        "title": "Decentralized Learning",
+        "description": "Master Bitcoin and Nostr protocols through structured, progressive lessons from basics to mastery."
       }
     },
     "how_it_works": {
       "title": "How It Works",
       "step1": {
         "title": "Browse Lessons",
-        "description": "Explore our catalog organized by CEFR levels (A1-C2). Start with free lessons to try it out."
+        "description": "Explore our catalog organized by Bitcoin/Nostr skill levels (Basics to Master). Start with free lessons to understand sound money and decentralized protocols."
       },
       "step2": {
         "title": "Unlock with Bitcoin",
@@ -240,7 +268,7 @@
       "company": "Company",
       "developed_by": "Developed by",
       "tagline_footer": "Building the future of Bitcoin-powered education",
-      "copyright": "© {{year}} SBC. All rights reserved. Powered by Bitcoin Lightning Network."
+      "copyright": "© {{year}} Bitcoin Nostr. All rights reserved. Powered by Bitcoin Lightning Network."
     }
   },
   "gamification": {

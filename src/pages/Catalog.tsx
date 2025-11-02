@@ -24,12 +24,19 @@ export function Catalog() {
         <div className="container mx-auto px-4 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2 md:gap-3">
-              <img 
-                src="/logo-h.png" 
-                alt="Zaptalk Logo" 
-                className="h-10 w-10 md:h-12 md:w-12 object-contain"
-              />
-              <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
+              <div className="flex items-center gap-2">
+                <img 
+                  src="/bitcoin.png" 
+                  alt="Bitcoin" 
+                  className="h-8 w-8 md:h-10 md:w-10 object-contain drop-shadow-sm"
+                />
+                <img 
+                  src="/nostr.png" 
+                  alt="Nostr" 
+                  className="h-8 w-8 md:h-10 md:w-10 object-contain drop-shadow-sm"
+                />
+              </div>
+              <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-purple-600 bg-clip-text text-transparent">
                 {t('app.name')}
               </span>
             </Link>
@@ -60,10 +67,50 @@ export function Catalog() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto max-w-6xl">
-          {levels.map((level) => (
-            <LevelCard key={level.code} level={level} />
-          ))}
+        {/* Bitcoin Section */}
+        <div className="mb-16">
+          <div className="mb-8 text-center relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-orange-100/50 to-amber-100/50 dark:from-orange-900/20 dark:to-amber-900/20 rounded-3xl -m-4"></div>
+            <div className="relative p-6">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <img src="/bitcoin.png" alt="Bitcoin" className="w-12 h-12" />
+                <h2 className="text-4xl font-bold bg-gradient-to-r from-orange-600 to-amber-600 bg-clip-text text-transparent">
+                  {t('catalog.bitcoin_section.title')}
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                {t('catalog.bitcoin_section.description')}
+              </p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto max-w-7xl">
+            {levels.filter(level => level.category === 'bitcoin').map((level) => (
+              <LevelCard key={level.code} level={level} />
+            ))}
+          </div>
+        </div>
+
+        {/* Nostr Section */}
+        <div className="mb-16">
+          <div className="mb-8 text-center relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-purple-100/50 to-indigo-100/50 dark:from-purple-900/20 dark:to-indigo-900/20 rounded-3xl -m-4"></div>
+            <div className="relative p-6">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <img src="/nostr.png" alt="Nostr" className="w-12 h-12" />
+                <h2 className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent">
+                  {t('catalog.nostr_section.title')}
+                </h2>
+              </div>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                {t('catalog.nostr_section.description')}
+              </p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto max-w-7xl">
+            {levels.filter(level => level.category === 'nostr').map((level) => (
+              <LevelCard key={level.code} level={level} />
+            ))}
+          </div>
         </div>
 
         <div className="mt-16 p-8 bg-muted/50 rounded-2xl max-w-4xl mx-auto">
@@ -72,7 +119,7 @@ export function Catalog() {
             {t('catalog.not_sure.description')}
           </p>
           <div className="text-center">
-            <Link to="/catalog/A1">
+            <Link to="/catalog/B1">
               <Button size="lg" className="gap-2">
                 {t('catalog.not_sure.button')}
               </Button>

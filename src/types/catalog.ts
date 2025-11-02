@@ -1,4 +1,4 @@
-export type LevelCode = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+export type LevelCode = 'B1' | 'B2' | 'B3' | 'B4' | 'N1' | 'N2' | 'N3' | 'N4';
 
 export type LessonKind = 'theory' | 'practical' | 'technical' | 'history' | 'concepts' | 'hands-on';
 
@@ -43,11 +43,14 @@ export interface Module {
   lessonIds: string[];
 }
 
+export type CategoryType = 'bitcoin' | 'nostr';
+
 export interface Level {
   code: LevelCode;
   title: string;
   description?: string;
   moduleIds: string[];
+  category: CategoryType;
 }
 
 export type SkuType = 'lesson' | 'module' | 'level';

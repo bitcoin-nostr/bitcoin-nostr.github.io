@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Zap, BookOpen, Clock, Award, TrendingUp, Sparkles } from 'lucide-react';
+import { Zap, BookOpen, Clock, TrendingUp, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { FAQAccordion } from '@/components/FAQAccordion';
@@ -23,12 +23,19 @@ export function Landing() {
         <div className="container mx-auto px-4 py-3 md:py-4">
           <div className="flex items-center justify-between">
             <Link to="/" className="flex items-center gap-2 md:gap-3">
-              <img 
-                src="/logo-h.png" 
-                alt="Zaptalk Logo" 
-                className="h-10 w-10 md:h-12 md:w-12 object-contain"
-              />
-              <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
+              <div className="flex items-center gap-2">
+                <img 
+                  src="/bitcoin.png" 
+                  alt="Bitcoin" 
+                  className="h-8 w-8 md:h-10 md:w-10 object-contain drop-shadow-sm"
+                />
+                <img 
+                  src="/nostr.png" 
+                  alt="Nostr" 
+                  className="h-8 w-8 md:h-10 md:w-10 object-contain drop-shadow-sm"
+                />
+              </div>
+              <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-purple-600 bg-clip-text text-transparent">
                 {t('app.name')}
               </span>
             </Link>
@@ -50,16 +57,32 @@ export function Landing() {
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Hero Image - Shows on right in LTR, left in RTL */}
             <div className="relative order-1 ltr:lg:order-2 rtl:lg:order-1 w-full">
-              <div className="relative z-10">
-                <img 
-                  src="/logo-f.png" 
-                  alt="Zaptalk Mascot" 
-                  className="w-full max-w-[300px] md:max-w-md mx-auto drop-shadow-2xl animate-float"
-                />
+              <div className="relative z-10 flex items-center justify-center gap-8">
+                <div className="relative">
+                  <img 
+                    src="/bitcoin.png" 
+                    alt="Bitcoin" 
+                    className="w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl animate-float"
+                  />
+                  <div className="absolute -top-2 -right-2 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                    BTC
+                  </div>
+                </div>
+                <div className="text-4xl md:text-6xl font-bold text-muted-foreground">+</div>
+                <div className="relative">
+                  <img 
+                    src="/nostr.png" 
+                    alt="Nostr" 
+                    className="w-32 h-32 md:w-40 md:h-40 drop-shadow-2xl animate-float animation-delay-500"
+                  />
+                  <div className="absolute -top-2 -right-2 bg-purple-500 text-white text-xs font-bold px-2 py-1 rounded-full">
+                    NOSTR
+                  </div>
+                </div>
               </div>
               {/* Decorative elements */}
-              <div className="absolute top-1/4 ltr:-left-8 rtl:-right-8 w-32 h-32 bg-purple-300 rounded-full blur-3xl opacity-30 animate-pulse" />
-              <div className="absolute bottom-1/4 ltr:-right-8 rtl:-left-8 w-40 h-40 bg-orange-300 rounded-full blur-3xl opacity-30 animate-pulse delay-1000" />
+              <div className="absolute top-1/4 ltr:-left-8 rtl:-right-8 w-32 h-32 bg-orange-300 rounded-full blur-3xl opacity-30 animate-pulse" />
+              <div className="absolute bottom-1/4 ltr:-right-8 rtl:-left-8 w-40 h-40 bg-purple-300 rounded-full blur-3xl opacity-30 animate-pulse delay-1000" />
             </div>
 
             {/* Hero Text - Shows on left in LTR, right in RTL */}
@@ -126,8 +149,12 @@ export function Landing() {
 
             <Card className="border-2 hover:shadow-xl hover:border-orange-300 transition-all duration-300 hover:-translate-y-1">
               <CardContent className="pt-6 text-center space-y-4">
-                <div className="h-16 w-16 mx-auto bg-gradient-to-br from-orange-500 to-orange-400 rounded-2xl flex items-center justify-center">
-                  <Zap className="h-8 w-8 text-white fill-current" />
+                <div className="h-16 w-16 mx-auto bg-gradient-to-br from-orange-500 to-orange-400 rounded-2xl flex items-center justify-center p-2">
+                  <img 
+                    src="/bitcoin.png" 
+                    alt="Bitcoin" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="text-xl font-bold">{t('landing.features.bitcoin_payments.title')}</h3>
                 <p className="text-muted-foreground">
@@ -138,8 +165,12 @@ export function Landing() {
 
             <Card className="border-2 hover:shadow-xl hover:border-purple-300 transition-all duration-300 hover:-translate-y-1">
               <CardContent className="pt-6 text-center space-y-4">
-                <div className="h-16 w-16 mx-auto bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl flex items-center justify-center">
-                  <Award className="h-8 w-8 text-white" />
+                <div className="h-16 w-16 mx-auto bg-gradient-to-br from-purple-600 to-pink-500 rounded-2xl flex items-center justify-center p-2">
+                  <img 
+                    src="/nostr.png" 
+                    alt="Nostr" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <h3 className="text-xl font-bold">{t('landing.features.cefr_standard.title')}</h3>
                 <p className="text-muted-foreground">
@@ -204,11 +235,16 @@ export function Landing() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <div className="bg-gradient-to-r from-purple-600 to-orange-500 rounded-3xl p-12 text-white relative overflow-hidden">
-            <div className="absolute top-0 ltr:right-0 rtl:left-0 opacity-20">
+            <div className="absolute top-0 ltr:right-0 rtl:left-0 opacity-20 flex items-center gap-4">
               <img 
-                src="/logo-h.png" 
+                src="/bitcoin.png" 
                 alt="" 
-                className="h-48 w-48 object-contain"
+                className="h-32 w-32 object-contain"
+              />
+              <img 
+                src="/nostr.png" 
+                alt="" 
+                className="h-32 w-32 object-contain"
               />
             </div>
             <div className="relative z-10">
@@ -236,12 +272,19 @@ export function Landing() {
             {/* Brand Column */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <img 
-                  src="/logo-h.png" 
-                  alt="Zaptalk Logo" 
-                  className="h-10 w-10 object-contain"
-                />
-                <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
+                <div className="flex items-center gap-2">
+                  <img 
+                    src="/bitcoin.png" 
+                    alt="Bitcoin" 
+                    className="h-8 w-8 object-contain drop-shadow-sm"
+                  />
+                  <img 
+                    src="/nostr.png" 
+                    alt="Nostr" 
+                    className="h-8 w-8 object-contain drop-shadow-sm"
+                  />
+                </div>
+                <span className="text-xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-purple-600 bg-clip-text text-transparent">
                   {t('app.name')}
                 </span>
               </div>
@@ -261,7 +304,7 @@ export function Landing() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/ZapTalk"
+                    href="https://github.com/bitcoin-nostr"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-primary transition-colors"

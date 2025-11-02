@@ -45,12 +45,19 @@ export function Progress() {
           <div className="container mx-auto px-4 py-3 md:py-4">
             <div className="flex items-center justify-between">
               <Link to="/" className="flex items-center gap-2 md:gap-3">
-                <img 
-                  src="/logo-h.png" 
-                  alt="Zaptalk Logo" 
-                  className="h-10 w-10 md:h-12 md:w-12 object-contain"
-                />
-                <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
+                <div className="flex items-center gap-1">
+                  <img 
+                    src="/bitcoin.png" 
+                    alt="Bitcoin" 
+                    className="h-8 w-8 md:h-10 md:w-10 object-contain"
+                  />
+                  <img 
+                    src="/nostr.png" 
+                    alt="Nostr" 
+                    className="h-8 w-8 md:h-10 md:w-10 object-contain"
+                  />
+                </div>
+                <span className="text-xl md:text-2xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-purple-600 bg-clip-text text-transparent">
                   {t('app.name')}
                 </span>
               </Link>
