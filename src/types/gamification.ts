@@ -89,7 +89,7 @@ export interface WeeklyPlan {
 
 export interface RoadmapNode {
   lessonId: string;
-  level: string; // A1, A2, etc.
+  level: string; // B1-B4 (Bitcoin), N1-N4 (Nostr)
   moduleId: string;
   position: { x: number; y: number };
   status: 'locked' | 'available' | 'in-progress' | 'completed';
@@ -98,7 +98,7 @@ export interface RoadmapNode {
 }
 
 export interface LevelProgress {
-  level: string; // A1, A2, etc.
+  level: string; // B1-B4 (Bitcoin), N1-N4 (Nostr)
   totalLessons: number;
   completedLessons: number;
   unlockedLessons: number;

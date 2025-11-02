@@ -509,7 +509,7 @@ export function Profile() {
                 <CardDescription>{t('profile.learning_progress.description')}</CardDescription>
               </CardHeader>
               <CardContent className="space-y-6">
-                {['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map((level) => {
+                {['B1', 'B2', 'B3', 'B4', 'N1', 'N2', 'N3', 'N4'].map((level) => {
                   const levelLessons = lessons.filter(l => l.level === level);
                   const levelCompletedCount = 0; // We don't have progress tracking
                   const progress = levelLessons.length > 0 

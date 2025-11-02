@@ -69,7 +69,7 @@ export function LearningRoadmap({ className, compact = false }: LearningRoadmapP
       
       // Determine level status
       let levelStatus: RoadmapNode['status'] = 'locked';
-      if (level.code === 'A1') {
+      if (level.code === 'B1') {
         levelStatus = completedInLevel === totalInLevel ? 'completed' : 
                       completedInLevel > 0 ? 'in-progress' : 'available';
       } else {
