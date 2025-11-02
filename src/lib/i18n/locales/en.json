@@ -1,0 +1,376 @@
+{
+  "app": {
+    "name": "Bitcoin Nostr",
+    "tagline": "Learn Bitcoin & Nostr, Unlock Freedom",
+    "description": "Master Bitcoin and Nostr with 5-minute lessons. Pay only for what you learn with Bitcoin Lightning."
+  },
+  "nav": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "progress": "Progress",
+    "profile": "Profile",
+    "login": "Log In",
+    "logout": "Log Out"
+  },
+  "hero": {
+    "title": "Learn Bitcoin & Nostr",
+    "subtitle": "5-minute lessons. Pay with sats. No subscriptions.",
+    "cta_free": "Start Free",
+    "cta_unlock": "Unlock with Bitcoin ⚡"
+  },
+  "levels": {
+    "A1": "Bitcoin Basics",
+    "A2": "Bitcoin Fundamentals",
+    "B1": "Nostr Basics",
+    "B2": "Nostr Applications",
+    "C1": "Advanced Bitcoin",
+    "C2": "Bitcoin & Nostr Master",
+    "A1_title": "Bitcoin Basics",
+    "A1_desc": "Start your Bitcoin journey with the fundamentals",
+    "A2_title": "Bitcoin Fundamentals", 
+    "A2_desc": "Deepen your understanding of Bitcoin technology",
+    "B1_title": "Nostr Basics",
+    "B1_desc": "Discover the decentralized social protocol",
+    "B2_title": "Nostr Applications",
+    "B2_desc": "Build and use Nostr applications",
+    "C1_title": "Advanced Bitcoin",
+    "C1_desc": "Master advanced Bitcoin concepts and Lightning",
+    "C2_title": "Bitcoin & Nostr Master",
+    "C2_desc": "Achieve mastery of the Bitcoin and Nostr ecosystem"
+  },
+  "modules": {
+    "A1-M01_title": "Bitcoin Foundations",
+    "A1-M01_desc": "Master the fundamental concepts of Bitcoin and digital money"
+  },
+  "lesson": {
+    "free": "Free",
+    "locked": "Locked",
+    "duration": "{{minutes}} min",
+    "unlock": "Unlock for {{sats}} sats",
+    "start": "Start Lesson",
+    "continue": "Continue",
+    "completed": "Completed",
+    "learn": "Learn",
+    "practice": "Practice",
+    "story": "Story",
+    "mark_complete": "Mark as Complete",
+    "submit_quiz": "Submit Quiz",
+    "try_again": "Try Again",
+    "no_practice": "No practice questions available for this lesson.",
+    "in_progress": "In Progress",
+    "min": "min",
+    "explore_level": "Explore Level"
+  },
+  "payment": {
+    "processing": "Processing payment...",
+    "success": "Payment successful! Lesson unlocked.",
+    "error": "Payment failed. Please try again.",
+    "verifying": "Verifying..."
+  },
+  "auth": {
+    "guest": "Continue as Guest",
+    "with_nostr": "Log in with Nostr",
+    "guest_note": "As a guest, you only have access to free lessons.",
+    "log_in": "Log in",
+    "sign_up": "Sign Up",
+    "sign_up_or_login": "Sign up or log in to continue",
+    "or_log_in": "Or log in",
+    "verifying": "Verifying..."
+  },
+  "account": {
+    "switch_relay": "Switch Relay",
+    "switch_account": "Switch Account",
+    "view_profile": "View Profile",
+    "wallet_settings": "Wallet Settings",
+    "add_account": "Add another account",
+    "log_out": "Log out"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": {
+      "question": "What does this app teach me?",
+      "answer": "Bitcoin Nostr helps you master Bitcoin and Nostr through bite-sized 5-minute lessons. Learn about sound money, decentralized protocols, and financial sovereignty. Pay only for the lessons you want with Bitcoin Lightning—no subscriptions, no commitment."
+    },
+    "q2": {
+      "question": "I'm new to Bitcoin, will this help?",
+      "answer": "Absolutely! We start from the basics (What is Money?) and progress through Bitcoin fundamentals, Nostr protocols, and advanced concepts. Each level builds your knowledge step by step."
+    },
+    "q3": {
+      "question": "Who is this for?",
+      "answer": "Anyone who wants to understand Bitcoin and Nostr at their own pace. Whether you're curious about sound money, want to learn about decentralized social media, or seeking financial sovereignty, our lessons fit your schedule."
+    },
+    "q4": {
+      "question": "What topics do you cover?",
+      "answer": "We cover Bitcoin fundamentals (money theory, cryptography, economics), Lightning Network, Nostr protocol, decentralized applications, privacy, and financial sovereignty. All content is practical and actionable."
+    },
+    "q5": {
+      "question": "Do I need technical background?",
+      "answer": "No! Our lessons start with basic concepts and gradually build complexity. Each lesson includes clear explanations, real examples, and quizzes to test your understanding. Technical topics are explained in simple terms."
+    }
+  },
+  "profile": {
+    "title": "My Profile",
+    "sign_in_required": "Sign in required",
+    "sign_in_message": "Please sign in to view your profile",
+    "back_to_catalog": "Back to Catalog",
+    "view_full_progress": "View Full Progress & Roadmap",
+    "edit_profile": "Edit Profile",
+    "log_out": "Log Out",
+    "save": "Save",
+    "cancel": "Cancel",
+    "avatar_url": "Avatar URL",
+    "display_name": "Display Name",
+    "username": "Username",
+    "bio": "Bio",
+    "website": "Website",
+    "no_bio": "No bio yet",
+    "bio_placeholder": "Tell us about yourself...",
+    "avatar_url_placeholder": "https://...",
+    "display_name_placeholder": "John Doe",
+    "username_placeholder": "johndoe",
+    "website_placeholder": "https://example.com",
+    "statistics": {
+      "unlocked": "Unlocked",
+      "completed": "Completed",
+      "sats_spent": "Sats Spent",
+      "avg_score": "Avg Score"
+    },
+    "learning_progress": {
+      "title": "Learning Progress",
+      "description": "Your journey through the CEFR levels",
+      "completed": "{{count}}/{{total}} completed"
+    },
+    "recent_activity": {
+      "title": "Recent Activity",
+      "description": "Your latest lessons",
+      "no_lessons": "No lessons unlocked yet",
+      "browse_catalog": "Browse Catalog"
+    },
+    "toast": {
+      "invalid_file_title": "Invalid file",
+      "invalid_file_desc": "Please select an image file.",
+      "file_too_large_title": "File too large",
+      "file_too_large_desc": "Please select an image smaller than 5MB.",
+      "image_uploaded_title": "Image uploaded",
+      "image_uploaded_desc": "Your profile picture has been uploaded.",
+      "upload_failed_title": "Upload failed",
+      "upload_failed_desc": "Failed to upload image. Please try again.",
+      "profile_updated_title": "Profile updated",
+      "profile_updated_desc": "Your profile has been updated successfully.",
+      "update_failed_title": "Error",
+      "update_failed_desc": "Failed to update profile. Please try again.",
+      "logged_out_title": "Logged out",
+      "logged_out_desc": "You have been logged out successfully."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "retry": "Retry",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "back": "Back",
+    "back_to_home": "Back to Home",
+    "back_to_catalog": "Back to Catalog",
+    "minutes": "minutes",
+    "monthly_stats": "Monthly Stats"
+  },
+  "catalog": {
+    "title": "Choose Your Level",
+    "subtitle": "Start from A1 (beginner) or jump to your current level",
+    "not_sure": {
+      "title": "Not Sure Where to Start?",
+      "description": "Begin with A1 and work your way up. All A1 lessons have free previews!",
+      "button": "Start with A1"
+    }
+  },
+  "payment_toast": {
+    "login_required_title": "Login Required",
+    "login_required_desc": "Please sign in with Nostr to unlock lessons.",
+    "payment_successful_title": "⚡ Payment Successful!",
+    "payment_successful_desc": "{{displayName}} has been unlocked.",
+    "payment_failed_title": "Payment Failed",
+    "payment_failed_desc": "Please try again.",
+    "pay_with_sats": "Pay {{sats}} sats"
+  },
+  "landing": {
+    "features": {
+      "title": "Why Choose Bitcoin Nostr?",
+      "quick_lessons": {
+        "title": "5-Minute Lessons",
+        "description": "Perfect for busy schedules. Learn Bitcoin and Nostr in bite-sized chunks that fit your day."
+      },
+      "bitcoin_payments": {
+        "title": "Bitcoin Payments",
+        "description": "Pay only for what you learn. No subscriptions. No hidden fees. Just sats."
+      },
+      "cefr_standard": {
+        "title": "CEFR Standard",
+        "description": "Follow the globally recognized framework from A1 (beginner) to C2 (proficiency)."
+      }
+    },
+    "how_it_works": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Browse Lessons",
+        "description": "Explore our catalog organized by CEFR levels (A1-C2). Start with free lessons to try it out."
+      },
+      "step2": {
+        "title": "Unlock with Bitcoin",
+        "description": "Found a lesson you like? Pay with Bitcoin Lightning Network. Instant access, no waiting."
+      },
+      "step3": {
+        "title": "Learn & Progress",
+        "description": "Complete lessons, take quizzes, and track your progress. Build your skills step by step."
+      }
+    },
+    "cta": {
+      "title": "Ready to Start Learning?",
+      "subtitle": "Try your first lesson free. No credit card required.",
+      "button": "Browse Catalog"
+    },
+    "footer": {
+      "description": "Learn Bitcoin and Nostr. Pay per lesson, no subscriptions.",
+      "quick_links": "Quick Links",
+      "browse_catalog": "Browse Catalog",
+      "github": "GitHub",
+      "about_sbc": "About SBC",
+      "company": "Company",
+      "developed_by": "Developed by",
+      "tagline_footer": "Building the future of Bitcoin-powered education",
+      "copyright": "© {{year}} SBC. All rights reserved. Powered by Bitcoin Lightning Network."
+    }
+  },
+  "gamification": {
+    "xp": "XP",
+    "level": "Level",
+    "total_xp": "Total XP",
+    "xp_to_next_level": "{{xp}} XP to next level",
+    "lessons": "Lessons",
+    "day_streak": "Day Streak",
+    "achievements_count": "Achievements",
+    "level_titles": {
+      "novice": "Novice",
+      "learner": "Learner",
+      "student": "Student",
+      "apprentice": "Apprentice",
+      "practitioner": "Practitioner",
+      "skilled": "Skilled",
+      "adept": "Adept",
+      "expert": "Expert",
+      "specialist": "Specialist",
+      "professional": "Professional",
+      "master": "Master",
+      "grand_master": "Grand Master",
+      "legend": "Legend",
+      "champion": "Champion",
+      "virtuoso": "Virtuoso",
+      "grandmaster": "Grandmaster"
+    },
+    "achievements": {
+      "unlocked": "Achievement Unlocked!",
+      "total": "{{unlocked}} of {{total}} Achievements",
+      "categories": {
+        "milestone": "Milestones",
+        "streak": "Streaks",
+        "speed": "Speed",
+        "perfection": "Perfection",
+        "explorer": "Explorer",
+        "dedication": "Dedication"
+      },
+      "rarity": {
+        "common": "Common",
+        "rare": "Rare",
+        "epic": "Epic",
+        "legendary": "Legendary"
+      }
+    },
+    "streak": {
+      "current": "Current Streak",
+      "longest": "Longest Streak",
+      "days": "{{count}} days",
+      "freeze_available": "{{count}} freeze available",
+      "freeze_available_plural": "{{count}} freezes available",
+      "streak_saved": "Streak saved with freeze!",
+      "streak_lost": "Streak lost. Start again!"
+    },
+    "stats": {
+      "title": "Your Stats",
+      "total_study_time": "Total Study Time",
+      "lessons_completed": "Lessons Completed",
+      "average_score": "Average Score",
+      "perfect_scores": "Perfect Scores",
+      "hours": "{{hours}} hours",
+      "minutes": "{{minutes}} minutes"
+    },
+    "goals": {
+      "daily_goal": "Daily Goal",
+      "set_goal": "Set Daily Goal",
+      "lessons_target": "Lessons per day",
+      "minutes_target": "Minutes per day",
+      "progress": "Progress",
+      "achieved": "Goal Achieved!",
+      "keep_going": "Keep going!",
+      "completed": "{{completed}} / {{target}}"
+    },
+    "roadmap": {
+      "title": "Learning Roadmap",
+      "your_journey": "Your Journey",
+      "progress": "{{percent}}% Complete",
+      "estimated_time": "~{{hours}} hours remaining",
+      "status": {
+        "locked": "Locked",
+        "available": "Available",
+        "in_progress": "In Progress",
+        "completed": "Completed"
+      }
+    },
+    "planner": {
+      "title": "Study Planner",
+      "weekly_plan": "Weekly Plan",
+      "set_schedule": "Set Your Schedule",
+      "consistency": "Consistency",
+      "this_week": "This Week",
+      "next_week": "Next Week",
+      "goals_achieved": "{{achieved}} / {{total}} goals achieved"
+    }
+  },
+  "progress": {
+    "title": "My Progress",
+    "subtitle": "Track your learning journey and achievements",
+    "no_achievements": "No achievements yet",
+    "complete_lessons_to_earn": "Complete lessons to earn your first achievement"
+  },
+  "achievements": {
+    "first-lesson": {
+      "title": "First Steps",
+      "description": "Complete your first lesson"
+    },
+    "lessons-5": {
+      "title": "Getting Started",
+      "description": "Complete 5 lessons"
+    },
+    "lessons-10": {
+      "title": "Dedicated Learner",
+      "description": "Complete 10 lessons"
+    },
+    "lessons-25": {
+      "title": "Consistent Progress",
+      "description": "Complete 25 lessons"
+    },
+    "lessons-50": {
+      "title": "Half Century",
+      "description": "Complete 50 lessons"
+    },
+    "lessons-100": {
+      "title": "Centurion",
+      "description": "Complete 100 lessons"
+    },
+    "lessons-250": {
+      "title": "Master Learner",
+      "description": "Complete 250 lessons"
+    }
+  }
+}
